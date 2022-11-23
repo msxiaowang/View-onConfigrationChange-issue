@@ -17,11 +17,11 @@ class MyView(
     init {
         textView.gravity = Gravity.CENTER
         addView(textView, LayoutParams(LayoutParams.MATCH_PARENT, 300))
-        textView.text = if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) "Landscape" else "Vertical"
+        textView.text = if (resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) "Landscape" else "Portrait"
     }
 
     override fun onConfigurationChanged(newConfig: Configuration) {
         super.onConfigurationChanged(newConfig)
-        textView.text = if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) "Landscape" else "Vertical"
+        textView.text = if (newConfig.orientation == Configuration.ORIENTATION_LANDSCAPE) "Landscape" else "Portrait"
     }
 }
