@@ -7,7 +7,7 @@ import android.view.Gravity
 import android.widget.LinearLayout
 import android.widget.TextView
 
-class MyView(
+class MyView @JvmOverloads constructor(
     context: Context,
     attr: AttributeSet? = null,
     style: Int = 0
