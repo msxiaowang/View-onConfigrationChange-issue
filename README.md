@@ -1,4 +1,5 @@
 # View-onConfigrationChange-issue
+Sometimes View.onConfigurationChanged() is not called on orientation changes
 Repro steps:
 1. Click the "SHOW DIALOGFRAGMENT" button
 2. switch screen between landscape and portrait mode several times
